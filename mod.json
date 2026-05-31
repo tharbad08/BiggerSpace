@@ -2,16 +2,20 @@
     "Name": "BiggerSpace",
     "Enabled": true,
 
-    "Version": "0.1",
+    "Version": "1.0",
     "Description": "Allows you to travel to Magistracy of Canopus and some border planets in the campaign",
     "Author": "tharbad08",
-    "Website": "",
+    "Website": "https://github.com/tharbad08/BiggerSpace",
     "Contact": "Use github Issues",
-    "DependsOn": ["BTX_ExpansionPack","BT_Extended_Timeline"],
-
+    "DependsOn": ["BT_Extended_Timeline","BT_Extended_3050"],
+    
+    // Comment what you don't want
     "Manifest": [
+        // Unaligned Systems and Arano border 
         { "Type": "StarSystemDef", "Path": "border", "ShouldMergeJSON": true },
+        // Canopus domain
         { "Type": "StarSystemDef", "Path": "canopus", "ShouldMergeJSON": true },
+        // Canopus border. If you commented Canopus comment this too
         { "Type": "StarSystemDef", "Path": "canopusBorder", "ShouldMergeJSON": true }
     ]
 } 
