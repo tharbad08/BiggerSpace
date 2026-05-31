@@ -1,0 +1,17 @@
+{
+    "Name": "BiggerSpace",
+    "Enabled": true,
+
+    "Version": "0.1",
+    "Description": "Allows you to travel to Magistracy of Canopus and some border planets in the campaign",
+    "Author": "tharbad08",
+    "Website": "",
+    "Contact": "Use github Issues",
+    "DependsOn": ["BTX_ExpansionPack","BT_Extended_Timeline"],
+
+    "Manifest": [
+        { "Type": "StarSystemDef", "Path": "border", "ShouldMergeJSON": true },
+        { "Type": "StarSystemDef", "Path": "canopus", "ShouldMergeJSON": true },
+        { "Type": "StarSystemDef", "Path": "canopusBorder", "ShouldMergeJSON": true }
+    ]
+} 
